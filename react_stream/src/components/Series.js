@@ -19,7 +19,7 @@ const Series = () => {
 
   return (
     <section>
-      <nav className="navbar navbar-expand-sm bg-info navbar-info">
+      <nav className="navbar navbar-expand-sm bg-info navbar-info shadow-sm">
         <span className="container font-weight-bold navbarText">
           Popular Series
         </span>

@@ -18,7 +18,7 @@ const Movies = () => {
 
   return (
     <section>
-      <nav className="navbar navbar-expand-sm bg-info navbar-info">
+      <nav className="navbar navbar-expand-sm bg-info navbar-info shadow-sm">
         <span className="container font-weight-bold navbarText">
           Popular Movies
         </span>
@@ -28,6 +28,9 @@ const Movies = () => {
         {movies.map((movie, i) => (
           <div key={i} className="ml-5 mb-5">
             <div className="card" style={{ width: "14rem" }}>
+              <span className="badge badge-info position-absolute p-3">
+                {movie.release_year}
+              </span>
               <img
                 src={movie.url_image_movie}
                 className="card-img-top"
