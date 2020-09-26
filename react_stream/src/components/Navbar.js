@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-function Navbar() {
+const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
             <div className="container">
@@ -19,9 +19,9 @@ function Navbar() {
                     <Link to="/update" className="nav-link">Mettre à jour</Link>
                 </li> */}
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Login</button>
-                <button class="btn btn-outline-info ml-3 my-2 my-sm-0" type="submit">Start your free trial</button>
+            <form className="form-inline my-2 my-lg-0">
+                <button className="btn btn-outline-info my-2 my-sm-0" type="submit">Login</button>
+                <button className="btn btn-outline-info ml-3 my-2 my-sm-0" type="submit">Start your free trial</button>
             </form>
             </div>
         </nav>

@@ -1,11 +1,8 @@
 // 1) CREATION DES DEPENDENCES DE MODULES
-//const https = require('https');
-const fs = require('fs');
 const express = require('express');
 const app = express();
-//const router = express.Router();
+
 const cors = require('cors');
-//const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const mysqlApostrophe = require('mysql-apostrophe');
 
@@ -24,11 +21,11 @@ app.use(bodyParser.urlencoded({
 app.use(mysqlApostrophe); // PERMET D'INSERER DES CHAMPS CONCERNANT DES APOSTROPHES
 
 // 4 - RECUPERATION DES FICHIERS ROUTES DANS LE DOSSIER ROUTES
-let read = require('./routes/films');
+let readMovies = require('./routes/Movies');
+let readCategories = require('./routes/Categories');
 
-app.use('/films', read);
-
-
+app.use('/films', readMovies);
+app.use('/films', readCategories);
 
 
 // CHOIX DU PORT UTILISÉ PAR LE SERVEUR

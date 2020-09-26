@@ -1,0 +1,20 @@
+
+
+GET http://localhost:3051/films/allseries HTTP/1.1
+
+###
+
+GET http://localhost:3051/films/allmovies HTTP/1.1
+
+###
+
+POST http://localhost:3051/films/newmovie HTTP/1.1
+content-type: application/json
+
+{
+    "title_movie": "Peninsula",
+    "description_movie": "La péninsule se déroule quatre ans après Train to Busan, alors que les personnages se battent pour fuir un pays en ruine à la suite d'un désastre sans précédent...",
+    "url_image_movie": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eFQDY2GcVRhWl0hYJw55iP1JKYn.jpg",
+    "release_year": "2020-01-01",
+    "id_category": 2
+}

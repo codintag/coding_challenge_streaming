@@ -1,0 +1,147 @@
+.footer {
+  background-color: #1E1E1E;
+  color: #aeaeae;
+}
+
+.footer nav ul{
+  list-style-type: none;
+  display: flex;
+}
+
+.footer nav ul li{
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+p {
+  font-size: 13px;
+}
+
+.homefootItem {
+  margin-left: 0 !important;
+}
+
+.figShadow {
+  /*background-image: url('../images/assets/placeholder.png');
+  */box-shadow: 3px 3px 3px grey;
+  width: 250px;
+  height: 300px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.figShadow:hover {
+  box-shadow: 3px 3px 10px #000;
+}
+
+.navbarText {
+ font-size: 25px;
+}
+
+
+.errorContainer{
+  height: 360px;
+}
+
+.loadingContainer {
+  height: 470px;
+}
+
+.loadingText {
+  margin-left: -200px;
+}
+
+
+/*Loading styles css*/
+
+.sectionLoading {
+  display: flex;
+  justify-content: center;
+}
+
+#grand-load3{
+	position: relative;
+	display: block;
+	margin: auto 100px;
+	}
+/*  width: 20px;
+	height: 60px;
+	background-color: #000;
+	animation: grand 1.5s infinite;
+	-webkit-animation: grand 1.5s infinite;
+*/
+
+#grand-load3:before{
+	content: "";
+	position: absolute;
+	display: block;
+	top:0; bottom:0; left:0px; right:0;
+	width: 15px;
+	height: 50px;
+	border:none;
+	border-radius: 0;
+	background-color: #000;
+	animation: grand 1s -0.9sinfinite;
+	-webkit-animation: grand 1s -0.9s infinite;
+	
+}
+#grand-load3:after{
+	content: "";
+	position: absolute;
+	display: block;
+	top:0; bottom:0; left:20px; right:0;
+	border-radius: 0;
+	border:none;
+	width: 15px;
+	height: 50px;
+	background-color: #000;
+	animation: grand 1s -0.6s infinite;
+	-webkit-animation: grand 1s -0.6s infinite;
+}
+
+#grand3:before{
+	content: "";
+	position: absolute;
+	display: block;
+	top:0; bottom:0; left:40px; right:0;
+	width: 15px;
+	height: 50px;
+	border:none;
+	border-radius: 0;
+	background-color: #000;
+	animation: grand 1s -0.3s infinite;
+	-webkit-animation: grand 1s -0.3s infinite;
+}
+#grand3:after{
+	content: "";
+	position: absolute;
+	display: block;
+	top:0; bottom:0; left:60px; right:0;
+	border-radius: 0;
+	border:none;
+	width: 15px;
+	height: 50px;
+	background-color: #000;
+	animation: grand 1s -0.1s infinite;
+	-webkit-animation: grand 1s -0.1 infinite;
+}
+
+@keyframes grand{
+	0%{-webkit-transform: scale(0);transform: scale(0)}
+	50%{-webkit-transform: scale(1);transform: scale(1)}
+	100%{-webkit-transform: scale(0);transform: scale(0)}
+}
+
+@-webkit-keyframes grand{
+	0%{transform: scale(0);
+-webkit-transform: scale(0); 
+	}
+	50%{transform: scale(1); -webkit-transform: scale(1);
+	}
+	100%{transform: scale(0);
+-webkit-transform: scale(0);
+}
+}
