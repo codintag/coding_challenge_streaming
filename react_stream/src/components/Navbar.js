@@ -7,14 +7,14 @@ const Navbar = () => {
             <div className="container">
             <ul className="navbar-nav">
                 <li className="nav-item active">
-                    <Link to="/" className="nav-link linkSize">Streaming</Link>
+                    <Link to="/" className="nav-link linkSize">Streaming Demo</Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <Link to="/series" className="nav-link linkSize">Series</Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/movies" className="nav-link linkSize">Movies</Link>
-                </li>
+                </li> */}
                 {/* <li className="nav-item">
                     <Link to="/update" className="nav-link">Mettre à jour</Link>
                 </li> */}
