@@ -1,6 +1,6 @@
 # coding_challenge_streaming
 
-Project with Nodejs and React 
+### Project with Nodejs and React 
 ---------------------------------
 
 ## MCD
@@ -47,10 +47,16 @@ Il suffit de lancer mysql, vous pouvez le faire en lançant un mamp, wamp ou xam
     
  #### fichier requests.http
  
- ![alt text](https://github.com/codintag/coding_challenge_streaming/blob/master/mcd%26dbFiles/requests.http.png)
+ ![alt text](https://github.com/codintag/coding_challenge_streaming/blob/master/mcd%26dbFiles/requests.png)
     
   
 ## Wireframes
+
+ ![alt text](https://github.com/codintag/coding_challenge_streaming/blob/master/mcd%26dbFiles/home_wirefr.png)
+ 
+ ![alt text](https://github.com/codintag/coding_challenge_streaming/blob/master/mcd%26dbFiles/series_wirefr.png)
+ 
+#### second wireframe
 
 ## Maquettes
 #### Homepage
