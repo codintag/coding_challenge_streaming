@@ -1,20 +1,59 @@
 
-
+### for get all series
 GET http://localhost:3051/films/allseries HTTP/1.1
 
-###
-
+###for gettting all movies
 GET http://localhost:3051/films/allmovies HTTP/1.1
 
-###
-
+### post method for adding a movie into database
 POST http://localhost:3051/films/newmovie HTTP/1.1
 content-type: application/json
 
 {
-    "title_movie": "Scooby-Doo",
-    "description_movie": "Deux ans après s'être résolus à fermer la Mystère & Cie, le super-chien Scooby-Doo et ses amis Fred, Daphné, Sammy et Véra se retrouvent sur Spooky Island. Les 5 limiers au flair inimitable ont été...",
-    "url_image_movie": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hNER9ZurlRPmcM2uqkLNXXgJzFk.jpg",
-    "release_year": "2002-01-01",
+    "title_movie": "Le Retour de la momie",
+    "description_movie": "En 1935, Rick O'Connell et sa femme Evelyn mènent une vie paisible à Londres avec Alex, leur fils talentueux. Mais une nouvelle catastrophe se prépare dans les profondeurs ...",
+    "url_image_movie": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/msgAHQVkFpSgBkslCsu3gy14Dwm.jpg",
+    "release_year": "2001-01-01",
     "id_category": 2
 }
+
+PUT http://localhost:3000/films/updatemovie/MOVIE_ID HTTP/1.1
+content-type: application/json
+
+{
+    "title_movie": "add a movie title",
+    "description_movie": "add a description for update this",
+    "url_image_movie": "add an url movie image here",
+    "release_year": "add a date like '2001-01-01' ",
+    "id_category": 2 //add a category id here
+}
+
+### for deleting a movie from database
+DELETE http://localhost:3000/films/deletemovie/MOVIE_ID HTTP/1.1
+content-type: application/json
+
+
+
+###  CATEGORY REQUESTS
+### for get all categories
+GET http://localhost:3051/films/categories HTTP/1.1
+
+### for adding a category into database
+POST http://localhost:3051/films/newcategory HTTP/1.1
+content-type: application/json
+
+{
+    "title_movie": "", //add a category name
+}
+
+### for update a category into database
+PUT http://localhost:3000/films/updatecategory/CATEGORY_ID HTTP/1.1
+content-type: application/json
+
+{
+    "title_movie": "CATEGORY NAME", //update a category name
+}
+
+### for deleting a category from database
+DELETE http://localhost:3000/films/deletecategory/CATEGORY_ID HTTP/1.1
+content-type: application/json

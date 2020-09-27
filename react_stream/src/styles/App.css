@@ -21,6 +21,17 @@ p {
   margin-left: 0 !important;
 }
 
+.mediaIcons {
+	width: 35px;
+}
+.facebookMediaIcons {
+	width: 20px;
+}
+
+.microsoftStore {
+	width: 110px;
+}
+
 .figShadow {
   /*background-image: url('../images/assets/placeholder.png');
   */box-shadow: 3px 3px 3px grey;

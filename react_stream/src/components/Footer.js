@@ -1,5 +1,11 @@
 import React from 'react'
+import facebookImg from '../images/social/facebook-white.svg'
+import instagramImg from '../images/social/instagram-white.svg'
+import twitterImg from '../images/social/twitter-white.svg'
 
+import appStore from '../images/store/app-store.svg'
+import googlePlay from '../images/store/play-store.svg'
+import microsoftStore from '../images/store/windows-store.svg'
 const Footer = () => {
     return (
         <footer className="footer">
@@ -18,15 +24,15 @@ const Footer = () => {
 
             <div className="d-flex justify-content-between">
                 <div className="d-flex"> 
-                    <p>facebook</p>
-                    <p className="ml-3">twitter</p>
-                    <p className="ml-3">instagram</p>
+                    <img src={facebookImg} className="facebookMediaIcons" />
+                    <img src={instagramImg} className="mediaIcons mx-5" />
+                    <img src={twitterImg} className="mediaIcons" />
                 </div>
 
                 <div className="d-flex">
-                    <p>App Store</p>
-                    <p className="ml-3"> Google Play</p>
-                    <p className="ml-3">Microsoft</p>
+                    <img src={appStore} />
+                    <img src={googlePlay} className="ml-3" />
+                    <img src={microsoftStore} className="ml-3 microsoftStore" />
                 </div>
             </div>
             </div>

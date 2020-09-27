@@ -7,7 +7,7 @@ const router = express.Router();
 
 // router for get all of Movies
 router.get('/allmovies', (req, res) => {
-    let selectionMovies = `SELECT *, DATE_FORMAT(release_year, "%Y") as release_year FROM MEDIAS WHERE id_category=2`;
+    let selectionMovies = `SELECT *, DATE_FORMAT(release_year, "%Y") as release_year FROM MEDIAS WHERE id_category=2 LIMIT 21`;
 
     // let selectionMovies = `SELECT id_movie, title_movie, description_movie, url_image_movie, DATE_FORMAT(release_year, "%Y") as release_year FROM MEDIAS WHERE id_category=2`;
 
@@ -24,7 +24,7 @@ router.get('/allmovies', (req, res) => {
 
 // router for get all series from db
 router.get('/allseries', (req, res) => {
-    let selectionSeries = `SELECT *, DATE_FORMAT(release_year, "%Y") as release_year FROM MEDIAS WHERE id_category=1`;
+    let selectionSeries = `SELECT *, DATE_FORMAT(release_year, "%Y") as release_year FROM MEDIAS WHERE id_category=1 LIMIT 21`;
 
     db.query(selectionSeries, (err, rows, fields) => {
         //on a soit une erreur , soit un résultat 'rows'
@@ -66,6 +66,50 @@ router.post('/newmovie', (req, res) => {
 
         }
     })
+});
+
+//update a movie
+router.put('/updatemovie/:id', (req, res) => {
+    let id = req.params.id;
+
+            let addPlayerRequest = `UPDATE MEDIA SET title_movie=?, description_movie=?, url_image_movie=?, release_year=?, id_category=? WHERE id_movie=?`;
+            let datas = [req.body.title_movie, req.body.description_movie, req.body.url_image_movie, req.body.release_year, req.body.id_category, id];
+
+            db.query(addPlayerRequest, datas, (err, rows, fields) => {
+                if (err) {
+                    console.log(err.message);
+                } else {
+                    // verify request has been updated
+                    let modifRows = rows.affectedRows;
+                    if(modifRows == 0) {
+                        console.log(`${modifRows} row(s) modified : the ID "${id}" does not exists`);
+                    } else {
+                        console.log(`${modifRows} row(s) modified : the movie with ID "${id}" has been updated`);
+                    }
+                }
+            });
+});
+
+//route for deleting a movie
+router.delete('/deletemovie/:id', (req, res) => {
+    let id = req.params.id;
+
+    let deleteUser = `DELETE FROM MEDIA WHERE id_movie = "${id}"`
+
+    db.query(deleteUser, (err, rows) => {
+        if (err) {
+            console.log(err.message);
+        } else {
+            // verify request has been updated
+            let modifRows = rows.affectedRows;
+            if (modifRows == 0) {
+                console.log(`${modifRows} row(s) modified : the ID "${id}" does not exists`);
+            } else {
+                console.log(`${modifRows} row(s) modified : the movie with ID "${id}" has been deleted`);
+            }
+
+        }
+    });
 });
 
 

@@ -26,11 +26,16 @@ const Series = () => {
         </nav>
 
         <div className="container mt-5 d-flex flex-wrap">
-          {series.map((serie, i) => (
-            <div key={i} className="ml-5  mb-5">
+          {series.map((serie, i) => {
+          if(+serie.release_year >= 2010) {
+            return (
+              <div key={i} className="ml-5  mb-5">
               {/* <img src={serie.url_image_movie} width="150" height="150" />
                 <p>{serie.title_movie}</p> */}
               <div className="card" style={{ width: "14rem" }}>
+              <span className="badge badge-info position-absolute p-3">
+                {serie.release_year}
+              </span>
                 <img
                   src={serie.url_image_movie}
                   className="card-img-top"
@@ -41,8 +46,10 @@ const Series = () => {
                   <p className="card-text">{serie.description_movie}</p>
                 </div>
               </div>
-            </div>
-          ))}
+            </div>)
+          }
+        }
+          )}
         </div>
     </section>
   );

@@ -25,8 +25,9 @@ const Movies = () => {
       </nav>
 
       <div className="container mt-5 d-flex flex-wrap">
-        {movies.map((movie, i) => (
-          <div key={i} className="ml-5 mb-5">
+        {movies.map((movie, i) => {
+          if(+movie.release_year >= 2010) {
+            return (<div key={i} className="ml-5 mb-5">
             <div className="card" style={{ width: "14rem" }}>
               <span className="badge badge-info position-absolute p-3">
                 {movie.release_year}
@@ -41,8 +42,10 @@ const Movies = () => {
                 <p className="card-text">{movie.description_movie}</p>
               </div>
             </div>
-          </div>
-        ))}
+          </div>)
+          }
+        }
+        )}
       </div>
     </section>
   );
