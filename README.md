@@ -2,11 +2,17 @@
 project with Nodejs and React
 
 ## MCD
-
-![alt text](https://github.com/codintag/DisneyPlus/blob/master/public/images/mobile.png)
+#### modèle logique des données
+![alt text](https://github.com/codintag/coding_challenge_streaming/blob/master/mcd%26dbFiles/mcd_streaming.png)
 
 ## Mysql
-
+Vous pouvez trouver le fichier sql dans le dossier mcd&dbFiles.
+#### installation:
+Il suffit de lancer mysql, vous pouvez le faire en lançant un mamp, wamp ou xamp locale server.
+  #### une fois dans l'interface de phpmyadmin, vous créez une base de données manuellement ou en lançant la commande (CREATE DATABASE nom_database).
+  ![alt text](https://github.com/codintag/coding_challenge_streaming/blob/master/mcd%26dbFiles/mcd_streaming.png)
+  #### ensuite dans le menu IMPORTER, choisir un fichier et vous sélectionner votre base de données afin de l'emporter puis éxecuter. 
+  ![alt text](https://github.com/codintag/coding_challenge_streaming/blob/master/mcd%26dbFiles/mcd_streaming.png)
 ## Node API streaming
 
 ## React streaming
