@@ -34,6 +34,7 @@ Il suffit de lancer mysql, vous pouvez le faire en lançant un mamp, wamp ou xam
 ## React streaming
 #### Mise en route de l'installation du projet React
   - une fois l'ensemble du dépot cloné, dans le dossier principale contenant le package.json, on éxecute la commande "npm install" afin d'installer les dépendances pour React.js
+  
   ![alt text](https://github.com/codintag/coding_challenge_streaming/blob/master/mcd%26dbFiles/react_dependences.png)
   
   - éxecutez la commande "npm start" pour lancer le live serveur du react.
