@@ -1,6 +1,6 @@
 # coding_challenge_streaming
----------------------------------
-project with Nodejs and React 
+
+Project with Nodejs and React 
 ---------------------------------
 
 ## MCD
@@ -38,6 +38,17 @@ Il suffit de lancer mysql, vous pouvez le faire en lançant un mamp, wamp ou xam
   ![alt text](https://github.com/codintag/coding_challenge_streaming/blob/master/mcd%26dbFiles/react_dependences.png)
   
   - éxecutez la commande "npm start" pour lancer le live serveur du react.
+  
+## Requests http
+
+  - Pour faire des requetes http, allez dans le dossier node_streaming_api.
+  - Ouvrez le fichier requests.http, vous pouvez dans ce fichier faire des requests http GET POST PUT et DELETE, en cliquant sur "send request" au
+    dessus de chaque requête.
+    
+ #### fichier requests.http
+ 
+ ![alt text](https://github.com/codintag/coding_challenge_streaming/blob/master/mcd%26dbFiles/requests.http.png)
+    
   
 ## Wireframes
 
