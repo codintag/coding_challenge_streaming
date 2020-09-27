@@ -10,13 +10,14 @@ POST http://localhost:3051/films/newmovie HTTP/1.1
 content-type: application/json
 
 {
-    "title_movie": "Le Retour de la momie",
-    "description_movie": "En 1935, Rick O'Connell et sa femme Evelyn mènent une vie paisible à Londres avec Alex, leur fils talentueux. Mais une nouvelle catastrophe se prépare dans les profondeurs ...",
-    "url_image_movie": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/msgAHQVkFpSgBkslCsu3gy14Dwm.jpg",
-    "release_year": "2001-01-01",
+    "title_movie": "Mortal Engines",
+    "description_movie": "Des centaines d’années après qu’un événement apocalyptique ait détruit la Terre, l’humanité s’est adaptée pour survivre en trouvant un nouveau mode de vie. Ainsi, de gigantesques villes mobiles...",
+    "url_image_movie": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3bWRzSRlnhoJJRURlMN5HZnfdZC.jpg",
+    "release_year": "2018-01-01",
     "id_category": 2
 }
 
+### put method for update a movie
 PUT http://localhost:3000/films/updatemovie/MOVIE_ID HTTP/1.1
 content-type: application/json
 

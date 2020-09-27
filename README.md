@@ -40,6 +40,7 @@ Il suffit de lancer mysql, vous pouvez le faire en lançant un mamp, wamp ou xam
   - éxecutez la commande "npm start" pour lancer le live serveur du react.
   
 ## Requests http
+##### Ici REST CLIENT, une extention VSC. Postman peut également être utilisé.
 
   - Pour faire des requetes http, allez dans le dossier node_streaming_api.
   - Ouvrez le fichier requests.http, vous pouvez dans ce fichier faire des requests http GET POST PUT et DELETE, en cliquant sur "send request" au

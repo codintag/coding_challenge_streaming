@@ -7,7 +7,7 @@ const router = express.Router();
 
 // router for get all of Movies
 router.get('/allmovies', (req, res) => {
-    let selectionMovies = `SELECT *, DATE_FORMAT(release_year, "%Y") as release_year FROM MEDIAS WHERE id_category=2 LIMIT 21`;
+    let selectionMovies = `SELECT *, DATE_FORMAT(release_year, "%Y") as release_year FROM MEDIAS WHERE id_category=2 AND release_year >= '2010' LIMIT 21`;
 
     // let selectionMovies = `SELECT id_movie, title_movie, description_movie, url_image_movie, DATE_FORMAT(release_year, "%Y") as release_year FROM MEDIAS WHERE id_category=2`;
 
@@ -24,7 +24,7 @@ router.get('/allmovies', (req, res) => {
 
 // router for get all series from db
 router.get('/allseries', (req, res) => {
-    let selectionSeries = `SELECT *, DATE_FORMAT(release_year, "%Y") as release_year FROM MEDIAS WHERE id_category=1 LIMIT 21`;
+    let selectionSeries = `SELECT *, DATE_FORMAT(release_year, "%Y") as release_year FROM MEDIAS WHERE id_category=1 AND release_year >= '2010' LIMIT 21`;
 
     db.query(selectionSeries, (err, rows, fields) => {
         //on a soit une erreur , soit un résultat 'rows'

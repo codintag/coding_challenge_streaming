@@ -26,7 +26,6 @@ const Movies = () => {
 
       <div className="container mt-5 d-flex flex-wrap">
         {movies.map((movie, i) => {
-          if(+movie.release_year >= 2010) {
             return (<div key={i} className="ml-5 mb-5">
             <div className="card" style={{ width: "14rem" }}>
               <span className="badge badge-info position-absolute p-3">
@@ -43,7 +42,6 @@ const Movies = () => {
               </div>
             </div>
           </div>)
-          }
         }
         )}
       </div>
