@@ -1,7 +1,8 @@
 # coding_challenge_streaming
 ---------------------------------
-- project with Nodejs and React -
+project with Nodejs and React 
 ---------------------------------
+
 ## MCD
 #### modèle logique des données
 ![alt text](https://github.com/codintag/coding_challenge_streaming/blob/master/mcd%26dbFiles/mcd_streaming.png)
@@ -19,10 +20,12 @@ Il suffit de lancer mysql, vous pouvez le faire en lançant un mamp, wamp ou xam
 #### Mise en route de l'utilisation de api en Node
  - Clonnez le dépot, qui contien les deux projets Api node et le front en React.js
  - positionnez vous dans le dossier node_streaming_api, qui contient les fichiers du projet dans les dépendances, pour que vous puissiez l'utiliser il suffit     d'éxecuter la commande "npm install" afin d'installer les dépendences.
+ 
 ![alt text](https://github.com/codintag/coding_challenge_streaming/blob/master/mcd%26dbFiles/dependences.png)
 
 #### Mise à jour des informations du fichier db.js dans le dossier utility
 - si vous décidez de changer le nom de votre db ou si vous utilisez un OS différent et ou wamp / mamp / xamp n'oubliez pas de changer les informations dans le fichier utility/db.js.
+
 ![alt text](https://github.com/codintag/coding_challenge_streaming/blob/master/mcd%26dbFiles/connection_mysql.png)
 
 - éxecutez la commande "npm start" pour lancer le serveur crée en express.js.
