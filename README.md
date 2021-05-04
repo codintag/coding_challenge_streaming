@@ -3,7 +3,7 @@
 ### Project with Nodejs and React 
 ---------------------------------
 
-## MCD
+## MLD
 #### modèle logique des données
 ![alt text](https://github.com/codintag/coding_challenge_streaming/blob/master/mcd%26dbFiles/mcd_streaming.png)
 
